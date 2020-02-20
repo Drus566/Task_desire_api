@@ -1,13 +1,21 @@
 ## Test api 
-* Аутентификация
-POST `http://localhost:3000/authenticate`
-* Все новости
-GET `http://localhost:3000/articles`
-* Определенная новость
-GET `http://localhost:3000/articles/:id`
-* Создание новости 
-`http://localhost:3000/articles`
-*
+* Authenticate - Аутентификация
+```
+POST http://localhost:3000/authenticate
+```
+* Index - Все новости
+```
+GET http://localhost:3000/articles
+```
+* Show - Запрашиваемая новость
+```
+GET http://localhost:3000/articles/:id
+```
+* Create - Создание новости 
+```
+POST http://localhost:3000/articles
+```
+* 
 ### Технологии:
 * Ruby ~> 2.5
 * Rails 5
