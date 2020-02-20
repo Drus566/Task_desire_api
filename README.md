@@ -1,48 +1,59 @@
 ## Test api 
-* Authenticate - аутентификация
+__Authenticate__ - аутентификация
 ```
 POST http://localhost:3000/authenticate
 ```
-* Index - все новости
+
+__Index__ - все новости
 ```
 GET http://localhost:3000/articles
 ```
-* Show - запрашиваемая новость
+
+__Show__ - запрашиваемая новость
 ```
 GET http://localhost:3000/articles/:id
 ```
-* Create - создание новости 
+
+__Create__ - создание новости 
 ```
 POST http://localhost:3000/articles
 ```
-* Update - обновление новости
+
+__Update__ - обновление новости
 ```
 PATCH http://localhost:3000/articles/:id
 ```
-* Destroy - удаление новости
+
+__Destroy__ - удаление новости
 ```
 DELETE http://localhost:3000/articles/:id
 ```
-* Authors - все авторы новостей
+
+__Authors__ - все авторы новостей
 ```
 GET http://localhost:3000/articles_authors
 ```
-* Author - все новости автора
+
+__Author__ - все новости автора
 ```
 GET http://localhost:3000/users/:id/articles
 ```
-* Unread - все непрочитанные новости пользователя
+
+__Unread__ - все непрочитанные новости пользователя
 ```
 GET http://localhost:3000/articles_unread
 ```
-* Add_to_favorites - добавление новости в избранный список пользователя
+
+__Add_to_favorites__ - добавление новости в избранный список пользователя
 ```
 POST http://localhost:3000/articles/:id/add_article_to_favorites
 ```
-* Read - отметка просмотра пользователем новости
+
+__Read__ - отметка просмотра пользователем новости
 ```
 POST http://localhost:3000/articles/:id/read
 ```
+
 ### Технологии:
 * Ruby ~> 2.5
 * Rails 5
