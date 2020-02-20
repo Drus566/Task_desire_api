@@ -1,24 +1,61 @@
-# README
+## Test api 
+__Authenticate__ - аутентификация
+```
+POST http://localhost:3000/authenticate
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+__Index__ - все новости
+```
+GET http://localhost:3000/articles
+```
 
-Things you may want to cover:
+__Show__ - запрашиваемая новость
+```
+GET http://localhost:3000/articles/:id
+```
 
-* Ruby version
+__Create__ - создание новости 
+```
+POST http://localhost:3000/articles
+```
 
-* System dependencies
+__Update__ - обновление новости
+```
+PATCH http://localhost:3000/articles/:id
+```
 
-* Configuration
+__Destroy__ - удаление новости
+```
+DELETE http://localhost:3000/articles/:id
+```
 
-* Database creation
+__Authors__ - все авторы новостей
+```
+GET http://localhost:3000/articles_authors
+```
 
-* Database initialization
+__Author__ - все новости автора
+```
+GET http://localhost:3000/users/:id/articles
+```
 
-* How to run the test suite
+__Unread__ - все непрочитанные новости пользователя
+```
+GET http://localhost:3000/articles_unread
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+__Add_to_favorites__ - добавление новости в избранный список пользователя
+```
+POST http://localhost:3000/articles/:id/add_article_to_favorites
+```
 
-* Deployment instructions
+__Read__ - отметка просмотра пользователем новости
+```
+POST http://localhost:3000/articles/:id/read
+```
 
-* ...
+### Технологии:
+* Ruby ~> 2.5
+* Rails 5
+* RSpec
+* БД Postgres
