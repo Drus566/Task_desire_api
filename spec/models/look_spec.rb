@@ -1,5 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe Look, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  describe 'validations' do 
+    it { validate_uniqueness_of(:user_id).scoped_to(:article_id) }
+  end
+
+  describe 'associations' do 
+    let(:look) { create(:look) }
+
+    it { expect(look).to belong_to(:user) }
+    it { expect(look).to belong_to(:article) }
+  end
 end
